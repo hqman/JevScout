@@ -7,6 +7,9 @@ AGENTS.md
 # not published — skill lives in skills/
 agents/
 .agents/
+.grok/
+demo/
+DEMO.md
 
 # hunt runtime
 state/

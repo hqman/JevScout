@@ -6,10 +6,6 @@ Demo MVP: a coding-agent **skill** that hunts AI/software jobs on real company s
 
 Skill: [`skills/jev-job-hunter`](skills/jev-job-hunter/SKILL.md).
 
-<video src="demo/jev_job.mp4" controls playsinline preload="metadata" width="100%">
-  <a href="demo/jev_job.mp4">Watch the demo (MP4)</a>
-</video>
-
 ## Setup
 
 ```bash
@@ -40,5 +36,3 @@ uv run jjh report
 ```
 
 If CDP is down: `evaluate_script` (no `filePath`) then `uv run jjh step --page - <<'EOF' ... EOF`.
-
-See [DEMO.md](DEMO.md).
