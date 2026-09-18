@@ -4,6 +4,10 @@
 !.env.example
 AGENTS.md
 
+# not published — skill lives in skills/
+agents/
+.agents/
+
 # hunt runtime
 state/
 results/

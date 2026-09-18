@@ -37,7 +37,7 @@ def _last(out: str) -> str:
 def test_extract_js_matches_skill_and_jjh_js(monkeypatch):
     monkeypatch.chdir(ROOT)
     js = (ROOT / "jev_job_hunter/extract.js").read_text(encoding="utf-8").strip()
-    skill = (ROOT / "agents/skills/jev-job-hunter/SKILL.md").read_text(encoding="utf-8")
+    skill = (ROOT / "skills/jev-job-hunter/SKILL.md").read_text(encoding="utf-8")
     assert js in skill
     assert _run(["js"]).strip() == js
 
