@@ -1,0 +1,23 @@
+{
+  "url": "https://openai.com/",
+  "title": "OpenAI | Research & Deployment",
+  "links": [
+    {"text": "Research", "href": "https://openai.com/research/index/"},
+    {"text": "Business", "href": "https://openai.com/business/"},
+    {"text": "Developers", "href": "https://platform.openai.com/"},
+    {"text": "Company", "href": "https://openai.com/about/"},
+    {"text": "Foundation", "href": "https://openaifoundation.org/"},
+    {"text": "GPT-6 Astra: A new generation of intelligence - Research - Sep 3, 2026", "href": "https://openai.com/index/gpt-6-astra/"},
+    {"text": "Introducing study mode in ChatGPT - Product - Aug 12, 2026", "href": "https://openai.com/index/study-mode/"},
+    {"text": "About Us", "href": "https://openai.com/about/"},
+    {"text": "Our Charter", "href": "https://openai.com/charter/"},
+    {"text": "Security", "href": "https://openai.com/security/"},
+    {"text": "News", "href": "https://openai.com/news/"},
+    {"text": "Safety", "href": "https://openai.com/safety/"},
+    {"text": "Careers", "href": "https://openai.com/careers/"},
+    {"text": "Twitter", "href": "https://twitter.com/openai"},
+    {"text": "LinkedIn", "href": "https://www.linkedin.com/company/openai"},
+    {"text": "GitHub", "href": "https://github.com/openai"}
+  ],
+  "text": "OpenAI\nResearch  Products  Business  Developers  Company\nGPT-6 Astra: A new generation of intelligence\nCompany  About Us  Our Charter  Security  Customers  Stories  News\nCareers\nTwitter  LinkedIn  GitHub"
+}

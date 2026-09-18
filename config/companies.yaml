@@ -1,0 +1,24 @@
+candidate:
+  headline: AI Engineer / Full-stack Developer
+  interests:
+    - AI / ML
+    - LLMs
+    - Agents
+    - Coding tools
+    - AI infrastructure
+    - Backend / Full-stack engineering
+  target_roles: [AI Engineer, Research Engineer, Backend Engineer, Full-stack Engineer, ML Infrastructure Engineer]
+
+companies:
+  - id: openai
+    name: OpenAI
+    url: https://openai.com/
+  - id: anthropic
+    name: Anthropic
+    url: https://www.anthropic.com/
+  - id: typesafe
+    name: TypeSafe
+    url: https://typesafe.ai/
+  - id: deepseek
+    name: DeepSeek
+    url: https://www.deepseek.com/en/

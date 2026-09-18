@@ -1,0 +1,20 @@
+{
+  "url": "https://openai.com/careers/",
+  "title": "OpenAI Careers",
+  "links": [
+    {"text": "Careers", "href": "https://openai.com/careers/"},
+    {"text": "Teams", "href": "https://openai.com/careers/teams/"},
+    {"text": "Life at OpenAI", "href": "https://openai.com/careers/life/"},
+    {"text": "Research Engineer, Agents", "href": "https://openai.com/careers/research-engineer-agents/"},
+    {"text": "Apply now", "href": "https://jobs.ashbyhq.com/openai/11111111-1111-4111-8111-111111111111/application"},
+    {"text": "Research Engineer, Reasoning", "href": "https://openai.com/careers/research-engineer-reasoning/"},
+    {"text": "Apply now", "href": "https://jobs.ashbyhq.com/openai/22222222-2222-4222-8222-222222222222/application"},
+    {"text": "Backend Engineer", "href": "https://openai.com/careers/backend-engineer/"},
+    {"text": "Apply now", "href": "https://jobs.ashbyhq.com/openai/33333333-3333-4333-8333-333333333333/application"},
+    {"text": "ML Infra Engineer", "href": "https://openai.com/careers/ml-infra-engineer/"},
+    {"text": "Apply now", "href": "https://jobs.ashbyhq.com/openai/44444444-4444-4444-8444-444444444444/application"},
+    {"text": "Platform Engineer", "href": "https://openai.com/careers/platform-engineer/"},
+    {"text": "Apply now", "href": "https://jobs.ashbyhq.com/openai/55555555-5555-4555-8555-555555555555/application"}
+  ],
+  "text": "OpenAI Careers\nSee open roles\nResearch Engineer, Agents\nSan Francisco / Remote  Apply now\nResearch Engineer, Reasoning\nSan Francisco / Remote  Apply now\nBackend Engineer\nSan Francisco  Apply now\nML Infra Engineer\nSan Francisco  Apply now\nPlatform Engineer\nSan Francisco  Apply now\nTeams  Life at OpenAI"
+}

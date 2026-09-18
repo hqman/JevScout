@@ -1,0 +1,20 @@
+# secrets and local agent config
+.env
+.env.*
+!.env.example
+AGENTS.md
+
+# hunt runtime
+state/
+results/
+
+# python / tooling
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.cursor/
+.DS_Store

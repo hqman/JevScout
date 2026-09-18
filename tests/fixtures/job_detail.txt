@@ -1,0 +1,23 @@
+Research Engineer, Agents
+OpenAI · San Francisco / Remote
+Full-time
+
+About the role
+We are hiring a Research Engineer to build LLM agents that use tools, browse, and complete long-horizon tasks.
+You will train and evaluate agent policies, design sandboxed tool-use environments, and ship production systems
+that software engineers and researchers use every day.
+
+Responsibilities
+- Build agent runtimes, planners, and tool-calling loops on top of large language models
+- Write Python services, eval harnesses, and backend APIs for experiment tracking
+- Partner with research on reinforcement learning, memory, and multi-agent orchestration
+- Improve reliability, latency, and safety of agent products in production
+
+Requirements
+- Strong software engineering in Python (backend, distributed systems, or ML infra)
+- Experience with LLMs, agents, or applied machine learning
+- Comfortable owning production systems end to end
+
+Nice to have
+- TypeScript, infra, or full-stack product experience
+- Published work on agents, tool-use, or reasoning

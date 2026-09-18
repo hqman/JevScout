@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jev-job-hunter — Official company websites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      height: 100%;
+      background: #000;
+      overflow: hidden;
+    }
+    .stage {
+      width: min(100vw, calc(100vh * 16 / 9));
+      height: min(100vh, calc(100vw * 9 / 16));
+      margin: 0 auto;
+      background: #000;
+      color: #fff;
+      font-family: Inter, "Helvetica Neue", sans-serif;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 5.4% 6.2% 5%;
+    }
+    .grid {
+      position: absolute;
+      inset: 48% -40% -30% -40%;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px);
+      background-size: 88px 88px;
+      transform: perspective(1100px) rotateX(66deg);
+      transform-origin: center top;
+      mask-image: linear-gradient(to top, #000 12%, transparent 78%);
+      pointer-events: none;
+    }
+    .top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-shrink: 0;
+    }
+    .brand { display: flex; flex-direction: column; gap: 10px; }
+    .brand-row { display: flex; align-items: center; gap: 14px; }
+    .brand-name {
+      font-family: Outfit, Inter, sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      color: #ff5dae;
+      letter-spacing: -0.02em;
+    }
+    .skill { display: flex; align-items: baseline; gap: 12px; }
+    .skill-kicker {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.34);
+    }
+    .skill-name {
+      font-family: Outfit, Inter, sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      color: #c8f000;
+    }
+    .kicker {
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.34);
+      padding-top: 8px;
+    }
+    h1 {
+      position: relative;
+      z-index: 1;
+      margin-top: 36px;
+      font-family: Outfit, Inter, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+    }
+    .sub {
+      position: relative;
+      z-index: 1;
+      margin-top: 12px;
+      font-size: 20px;
+      color: rgba(255,255,255,0.42);
+    }
+    .sites {
+      position: relative;
+      z-index: 1;
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      flex-shrink: 0;
+    }
+    .site {
+      border: 1px solid rgba(255,255,255,0.5);
+      padding: 18px 22px 16px;
+      position: relative;
+      background: #000;
+    }
+    .site::before, .site::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border: 1.5px solid #fff;
+    }
+    .site::before { top: -1.5px; left: -1.5px; border-right: 0; border-bottom: 0; }
+    .site::after { bottom: -1.5px; right: -1.5px; border-left: 0; border-top: 0; }
+    .site .name { font-size: 20px; font-weight: 600; }
+    .site .url { margin-top: 6px; font-size: 16px; color: #c8f000; }
+    .site .kind {
+      margin-top: 12px;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.34);
+    }
+    .flow {
+      position: relative;
+      z-index: 1;
+      margin-top: auto;
+      display: grid;
+      grid-template-columns: 1.25fr 1.35fr 0.7fr 0.95fr;
+      grid-template-rows: auto auto;
+      column-gap: 28px;
+      row-gap: 14px;
+      align-items: stretch;
+    }
+    .col {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.34);
+    }
+    .box {
+      border: 1px solid rgba(255,255,255,0.28);
+      background: rgba(0,0,0,0.55);
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 112px;
+    }
+    .box em {
+      font-style: normal;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.36);
+      margin-bottom: 8px;
+    }
+    .box b { font-weight: 500; font-size: 20px; line-height: 1.35; }
+    .chain { border-color: rgba(255,255,255,0.55); }
+    .jev-slot {
+      border: 1.5px solid #c8f000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      position: relative;
+      min-height: 112px;
+    }
+    .jev-slot::before, .jev-slot::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border: 1.5px solid #c8f000;
+    }
+    .jev-slot::before { top: -1.5px; left: -1.5px; border-right: 0; border-bottom: 0; }
+    .jev-slot::after { bottom: -1.5px; right: -1.5px; border-left: 0; border-top: 0; }
+    .jev-slot strong {
+      font-family: Outfit, Inter, sans-serif;
+      font-weight: 800;
+      font-size: 40px;
+      color: #c8f000;
+      letter-spacing: -0.04em;
+    }
+    .out b { color: #c8f000; }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="grid"></div>
+
+    <div class="top">
+      <div class="brand">
+        <div class="brand-row">
+          <svg width="32" height="32" viewBox="0 0 48 48" aria-hidden="true">
+            <path fill="none" stroke="#ff5dae" stroke-width="2.4"
+              d="M24 4 L42 14.5 V33.5 L24 44 L6 33.5 V14.5 Z" />
+            <path fill="none" stroke="#ff5dae" stroke-width="2.2"
+              d="M24 4 V24 L6 14.5 M24 24 L42 14.5 M24 24 V44" />
+          </svg>
+          <div class="brand-name">TypeSafe AI</div>
+        </div>
+        <div class="skill">
+          <span class="skill-kicker">Skill</span>
+          <span class="skill-name">jev-job-hunter</span>
+        </div>
+      </div>
+      <div class="kicker">Jev AI Job Hunter</div>
+    </div>
+
+    <h1>Any official website. Jobs that match you.</h1>
+    <p class="sub">Open the homepage. Jev finds the fit.</p>
+
+    <div class="sites">
+      <div class="site">
+        <div class="name">OpenAI</div>
+        <div class="url">openai.com</div>
+        <div class="kind">Official homepage</div>
+      </div>
+      <div class="site">
+        <div class="name">xAI</div>
+        <div class="url">x.ai</div>
+        <div class="kind">Official homepage</div>
+      </div>
+      <div class="site">
+        <div class="name">TypeSafe</div>
+        <div class="url">typesafe.ai</div>
+        <div class="kind">Official homepage</div>
+      </div>
+    </div>
+
+    <div class="flow">
+      <div class="col">To decide</div>
+      <div class="col">Decision chain</div>
+      <div class="col">Model</div>
+      <div class="col">Result</div>
+
+      <div class="box">
+        <em>openai.com</em>
+        <b>Applied AI Engineer, Codex</b>
+      </div>
+      <div class="box chain">
+        <em>One chain</em>
+        <b>Careers? → Job? → Fit?</b>
+      </div>
+      <div class="jev-slot"><strong>Jev</strong></div>
+      <div class="box out">
+        <em>Save or skip</em>
+        <b>Save 86%</b>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[project]
+name = "jev-job-hunter"
+version = "0.1.0"
+description = "Jev AI Job Hunter — Chrome sees and acts, Jev decides."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typesafe-sdk",
+    "python-dotenv",
+    "pyyaml",
+    "httpx",
+    "websockets>=14",
+]
+
+[project.scripts]
+jjh = "jev_job_hunter.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["jev_job_hunter"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"jev_job_hunter/extract.js" = "jev_job_hunter/extract.js"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
