@@ -6,6 +6,10 @@ Demo MVP: a coding-agent **skill** that hunts AI/software jobs on real company s
 
 Skill: [`skills/jev-job-hunter`](skills/jev-job-hunter/SKILL.md).
 
+<video src="assets/jev_job.mp4" controls playsinline preload="metadata" width="100%">
+  <a href="assets/jev_job.mp4">Watch the demo</a>
+</video>
+
 ## Setup
 
 ```bash
